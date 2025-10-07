@@ -40,12 +40,12 @@ function App() {
     try {
       setWidgetsLoading(true);
       
-      const indexesResponse = await axios.get('http://localhost:3001/api/indexes');
+      const indexesResponse = await axios.get('/api/indexes');
       if (indexesResponse.data.success) {
         setIndexes(indexesResponse.data.indexes);
       }
       
-      const moversResponse = await axios.get('http://localhost:3001/api/top-movers');
+      const moversResponse = await axios.get('/api/top-movers');
       if (moversResponse.data.success) {
         setTopMovers(moversResponse.data.movers);
       }
@@ -59,7 +59,7 @@ function App() {
   const fetchPortfolio = async () => {
     try {
       setPortfolioLoading(true);
-      const response = await axios.get('http://localhost:3001/api/portfolio');
+      const response = await axios.get('/api/portfolio');
       if (response.data.success) {
         setPortfolio(response.data.portfolio);
       }
@@ -86,7 +86,7 @@ function App() {
     setLoading(true);
     
     try {
-      const response = await axios.post('http://localhost:3001/api/research', {
+      const response = await axios.post('/api/research', {
         query: userQuery,
         conversationHistory: conversationHistory
       });
