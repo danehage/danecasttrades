@@ -1,0 +1,17 @@
+{
+  "balance": 981243,
+  "openPositions": [
+    {
+      "id": "1759519068852",
+      "type": "stock",
+      "symbol": "NVDA",
+      "shares": 100,
+      "entryPrice": 187.57,
+      "entryDate": "2025-10-03T19:17:48.852Z",
+      "costBasis": 18757
+    }
+  ],
+  "closedTrades": [],
+  "totalPL": 0,
+  "createdAt": "2025-10-03T18:58:28.098Z"
+}
